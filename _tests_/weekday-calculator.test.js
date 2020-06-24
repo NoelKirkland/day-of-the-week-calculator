@@ -15,7 +15,7 @@ describe ('validateInput', () => {
     console.log(validateInput);
   });
   test('should test that the day is within the specified range', () => {
-    expect(validateInput(12, 35, 1999)).toEqual("Valid");
+    expect(validateInput(12, 35, 1999)).toEqual("Invalid");
     console.log(validateInput);
   })
 });

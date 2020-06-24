@@ -1,14 +1,4 @@
-class Date {
-  constructor(month, day, year) {
-    this.validDate = null;
-    this.month = month;
-    this.day = day;
-    this.year = year;
-    this.dayOfWeek = "";
-  }
-};
-
-function validateInput(year, month, day)  {
+export function validateInput(month, day, year)  {
   let highestDay = 0;
   switch (month)  {
     case 1:
@@ -44,17 +34,17 @@ function validateInput(year, month, day)  {
 
 
 
-let userDate = new Date(userInputtedDate)
-console.log(userDate);
-userDate = "02/03/1993"
+// let userDate = new Date(userInputtedDate)
+// console.log(userDate);
+// userDate = "02/03/1993"
 
 
-const anchorDate = new Date ("01/01/1970")
-let userDate = new Date("02/03/1993");
-let userDate = new Date();
-let difDays = (userDate.getTime() - anchorDate.getTime()) / (1000 * 3600 * 24); 
+// const anchorDate = new Date ("01/01/1970")
+// let userDate = new Date("02/03/1993");
+// let userDate = new Date();
+// let difDays = (userDate.getTime() - anchorDate.getTime()) / (1000 * 3600 * 24); 
 
-if 
+// if 
 
 // Validation of input date:
 // var yearReg = '(201[4-9]|202[0-9])';            ///< Allows a number between 2014 and 2029

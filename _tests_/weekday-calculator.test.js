@@ -7,7 +7,7 @@ describe ('validateInput', () => {
   // });
 
   test('should identify whether the day input is valid', () =>  {
-    expect(validateInput(13, 3, 1993)).toEqual("Valid");
+    expect(validateInput(13, 3, 1993)).toEqual("Invalid");
     console.log(validateInput);
   });
 });

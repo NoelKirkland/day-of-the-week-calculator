@@ -12,7 +12,9 @@ $(document).ready(function () {
       let userInputtedDay = parseInt($("input#day").val());
       let userInputtedYear = parseInt($("input#year").val());
     if (validateInput(userInputtedMonth, userInputtedDay, userInputtedYear) === "Valid"){
-      getDayOfTheWeek(userInputtedMonth, userInputtedDay, userInputtedYear)
+      let dayOfWeek = getDayOfTheWeek(userInputtedMonth, userInputtedDay, userInputtedYear);
+      $("#outputDay").show();
+      $("#weekdayShow").text(dayOfWeek);
     }
   });
 });

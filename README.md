@@ -74,8 +74,6 @@ If _days difference_%7 == 0 then the day of the week of the user's inputted date
 
 ## Known Bugs
 
-<!-- commit change -->
-
 _ _
 ## Support and contact details
 

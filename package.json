@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "weekday-calculator",
   "version": "1.0.0",
-  "description": "description-here",
+  "description": "this is an application meant to tell you what day of the week a given date was/is",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -11,7 +11,7 @@
     "debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "your-name-here",
+  "author": "Noel Kirkland and Taylor Phillips",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",

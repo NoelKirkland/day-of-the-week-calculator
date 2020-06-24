@@ -18,4 +18,9 @@ describe ('validateInput', () => {
     expect(validateInput(12, 35, 1999)).toEqual("Invalid");
     console.log(validateInput);
   })
+  test('Date constructor should display correct date', () => {
+    let month = 2;
+    let testDate = new Date(month);
+    expect(testDate.month).toEqual(2);
+  });
 });

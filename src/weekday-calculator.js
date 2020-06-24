@@ -11,7 +11,7 @@ export function validateInput(month, day, year)  {
       highestDay = 31;
       break;
     case 2:
-      highestDay = 28;
+      highestDay = 29;
       break;
     case 4:
     case 6:
@@ -34,17 +34,75 @@ export function validateInput(month, day, year)  {
 
 
 
-// let userDate = new Date(userInputtedDate)
+// let userDate = new Date(userInputtedMonth, userInputtedDay, userInputtedYear)
 // console.log(userDate);
-// userDate = "02/03/1993"
+// userDate = 2, 3, 1993;
+class Date {
+  constructor(month, day, year) {
+    this.month = month;
+    this.day = day;
+    this.year = year;
+  }
 
+//     getDayOfTheWeek() {
+//     const anchorDate = new Date ("01/01/1970") // Thursday
+//     let userDate = new Date(month, day, year);
+//     let difDays = (userDate.getTime() - anchorDate.getTime()) / (1000 * 3600 * 24); 
+//     let dayOfWeek = ""
+//       if  (difDays % 7 === 0) {
+//       dayOfWeek = "Thursday"
+//     } else if (difDays % 7 === 1) {
+//       dayOfWeek = "Friday"
+//     } else if (difDays % 7 === 2) {
+//       dayOfWeek = "Saturday"
+//     } else if (difDays % 7 === 3) {
+//       dayOfWeek = "Sunday"
+//     } else if (difDays % 7 === 4) {
+//       dayOfWeek = "Monday"
+//     } else if (difDays % 7 === 5) {
+//       dayOfWeek = "Tuesday"
+//     } else if (difDays % 7 === 6) {
+//       dayOfWeek = "Wednesday"
+//     }
+//     return dayOfWeek;
+//   }
 
-// const anchorDate = new Date ("01/01/1970")
-// let userDate = new Date("02/03/1993");
-// let userDate = new Date();
-// let difDays = (userDate.getTime() - anchorDate.getTime()) / (1000 * 3600 * 24); 
+// }
+let inputtedDate = `The day was a ${dayofWeek}`
 
-// if 
+DayOfTheWeek(inputtedDate);
+
+let num1 = 2;
+let num2 = 3;
+let result = `${num1} multiplied by ${num2} is ${num1 * num2}.`;
+console.log(result)
+
+let month = 2
+let day = 3
+let year = 1993
+
+function getDayOfTheWeek (month, day, year){
+const anchorDate = new Date ("01/01/1970") // Thursday
+  let userDate = new Date(`${month}/${day}/${year}`);
+  let difDays = (userDate.getTime() - anchorDate.getTime()) / (1000 * 3600 * 24); 
+  let dayOfWeek = ""
+    if  (difDays % 7 === 0) {
+    dayOfWeek = "Thursday"
+  } else if (difDays % 7 === 1) {
+    dayOfWeek = "Friday"
+  } else if (difDays % 7 === 2) {
+    dayOfWeek = "Saturday"
+  } else if (difDays % 7 === 3) {
+    dayOfWeek = "Sunday"
+  } else if (difDays % 7 === 4) {
+    dayOfWeek = "Monday"
+  } else if (difDays % 7 === 5) {
+    dayOfWeek = "Tuesday"
+  } else if (difDays % 7 === 6) {
+    dayOfWeek = "Wednesday"
+  }
+  return dayOfWeek
+}
 
 // Validation of input date:
 // var yearReg = '(201[4-9]|202[0-9])';            ///< Allows a number between 2014 and 2029

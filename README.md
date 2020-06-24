@@ -81,10 +81,10 @@ _Contact me at...._
 
 ## Technologies Used
 
-_Technology!_
+_HTML, CSS, JavaScript, Jquery, Jest, Webpack_
 
 ### License
 
 *GPL license distribution*
 
-Copyright (c) 2020 **_N_**
+Copyright (c) 2020 **_Noel Kirkland and Taylor Phillips_**

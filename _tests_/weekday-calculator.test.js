@@ -11,7 +11,7 @@ describe ('validateInput', () => {
     console.log(validateInput);
   });
   test('should test that the year is outside of the specified floor and ceiling range', () => {
-    expect(validateInput(12, 3, 10001)).toEqual("Valid");
+    expect(validateInput(12, 3, 10001)).toEqual("Invalid");
     console.log(validateInput);
   });
 });

@@ -1,18 +1,16 @@
 # _PROJECT NAME_
 
-Weekday-Calculator
+Weekday Calculator
 
-#### _SHORT DESCR_
+#### _DESCRIPTION_
 
-This application can tell you what day it was! 6.24.20
+This application will tell you what day of the week it was based off of an inputted date!
 
-#### By _**YOUR NAME HERE**_
-
-Noel Kirkland and Taylor Phillips
+#### By _**Noel Kirkland and Taylor Phillips**_
 
 ## Description
 
-_This application will take a date from the user and return what day of the week that day in history was.  It will also let the user know if they have entered an invalid date_
+_This application will take a date from the user and return what day of the week that day saw or will be.  It will also let the user know if they have entered an invalid date_
 
 ### Specs
 
@@ -64,20 +62,12 @@ If _days difference_%7 == 0 then the day of the week of the user's inputted date
 | :------------- |:------------- | 
 | 06/24/2020 | "On 06/24/2020 the day of the week was Wednesday" |
 
-## Setup/Installation Requirements
-
-* _Visit the following link: _
-* _Clone the repository to your desired directory._
-* _OR_
-* _Visit here: _
-
-
 ## Known Bugs
+_The further the inputted date is from 01/01/1970 the less accurate the getDayOfTheWeek() function gets. I think this is because of how the JS method getTime() works. Would need to update application with either Moment.js or Day.js._
 
-_ _
 ## Support and contact details
 
-_Contact me at...._
+_For support or questions please contact me at noel.kirkland@gmail.com_
 
 ## Technologies Used
 
@@ -85,6 +75,6 @@ _HTML, CSS, JavaScript, Jquery, Jest, Webpack_
 
 ### License
 
-*GPL license distribution*
+*This project uses the following license: [MIT](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2020 **_Noel Kirkland and Taylor Phillips_**
+Intellectual property of Noel Kirkland & Taylor Phillips - 2020

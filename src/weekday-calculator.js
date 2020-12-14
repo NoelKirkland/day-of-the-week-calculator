@@ -34,9 +34,9 @@ export function validateInput(month, day, year)  {
 export function getDayOfTheWeek (month, day, year){
   const anchorDate = new Date ("01/01/1970") // Thursday
   let userDate = new Date(`${month}/${day}/${year}`);
-  let difDays = (userDate.getTime() - anchorDate.getTime()) / (1000 * 3600 * 24); 
+  let difDays = Math.floor((userDate.getTime() - anchorDate.getTime()) / (1000 * 3600 * 24));
   let dayOfWeek = ""
-    if  (difDays % 7 === 0) {
+  if  (difDays % 7 === 0) {
     dayOfWeek = "Thursday";
   } else if (difDays % 7 === 1) {
     dayOfWeek = "Friday";
@@ -53,6 +53,7 @@ export function getDayOfTheWeek (month, day, year){
   }
   return dayOfWeek;
 }
+
 
 
 

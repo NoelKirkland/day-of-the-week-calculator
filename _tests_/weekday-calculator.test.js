@@ -1,11 +1,6 @@
 import { validateInput, getDayOfTheWeek } from '../src/weekday-calculator.js';
 
 describe ('validateInput', () => {
-  // beforeEach(() => {
-  //   let month = 2;
-  //   let day = 3;
-  //   let year = 1993;
-  // });
 
   test('should identify whether the month input is valid', () =>  {
     expect(validateInput(13, 3, 1993)).toEqual("Invalid");
